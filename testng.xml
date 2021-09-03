@@ -4,13 +4,9 @@
     <listeners>
         <listener class-name="framework.listeners.CustomListener"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="D:/JavaRepo/AV/src/test/java/tests/Tests.java">
+    <test verbose="2" name="D:/JavaRepo/AV/src/test/java/tests/Tests.java">
         <classes>
-            <class name="tests.Tests">
-                <methods>
-                    <include name="LoginTest"/>
-                </methods>
-            </class>
+            <class name="tests.Tests"/>
         </classes>
     </test>
 </suite>

@@ -47,4 +47,8 @@ public class AppiumDriver {
             ioException.printStackTrace();
         }
     }
+
+    public static void ScrollDownClick(String text){
+        Current().findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\"" + text + "\").instance(0))").click();
+    }
 }
