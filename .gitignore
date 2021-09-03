@@ -1,6 +1,5 @@
 # Project exclude paths
 /target/
-*.json
 /TestResults/
 /.idea/
 /allure-results/
