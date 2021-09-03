@@ -17,7 +17,7 @@ public class Tests {
         OtherPage.GoToLoginForm();
         LoginPage.LoginByMail(email, password);
 
-        //Assert.assertEquals(OtherPage.GetUsername(), username, "Wrong username");
+        Assert.assertTrue(OtherPage.CheckForQuitButtonPresence());
     }
 
     @DataProvider(name = "users")
