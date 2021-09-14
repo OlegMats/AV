@@ -18,8 +18,8 @@ public class CustomListener implements ITestListener {
 
     public void onTestStart(ITestResult result) {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
+        caps.setCapability(MobileCapabilityType.UDID, FW.configuration.testEnv.deviceName);
+        caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
         caps.setCapability(MobileCapabilityType.APP, "src\\test\\resources\\appsBinaries\\av_by.apk");
         try {

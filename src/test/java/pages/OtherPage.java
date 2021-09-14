@@ -12,7 +12,7 @@ public class OtherPage {
 
     public static void GoToLoginForm() {
         AppiumDriver.FindElement(entranceField).click();
-        FW.Log().Step("Login Form is opened");
+//        FW.Log().Step("Login Form is opened");
     }
     public static String GetUsername(){
         return AppiumDriver.FindElement(username).getText();

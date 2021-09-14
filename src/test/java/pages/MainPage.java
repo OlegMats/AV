@@ -15,6 +15,6 @@ public class MainPage {
     public static void GoTo(By by) {
         AppiumDriver.FindElement(by).click();
         String section = by.toString().split("/")[1].split("_")[1];
-        FW.Log().Step(section.equals("primary") ? "'SEARCH' section is opened" : String.format("'%s' section is opened", section.toUpperCase()));
+//        FW.Log().Step(section.equals("primary") ? "'SEARCH' section is opened" : String.format("'%s' section is opened", section.toUpperCase()));
     }
 }

@@ -6,7 +6,7 @@ import pages.*;
 
 public class Tests extends BaseTest {
 
-    @Test(dataProvider = "users")
+    @Test(dataProvider = "UsersData")
     public void LoginTest(String email, String password) {
         MainPage.GoTo(MainPage.other);
         OtherPage.GoToLoginForm();
@@ -15,13 +15,13 @@ public class Tests extends BaseTest {
         Assert.assertTrue(OtherPage.CheckForQuitButtonPresence());
     }
 
-    @Test(dataProvider = "cars")
+    @Test(dataProvider = "CarsData")
     public void SearchTest(String brand, String model) {
         SearchPage.SearchWithParams();
         SearchWithParamsForm.SearchForCar(brand, model);
         SearchWithParamsForm.ShowResults();
+
         Assert.assertTrue(SearchResultsPage.GetFirstResult().contains(brand));
         Assert.assertTrue(SearchResultsPage.GetFirstResult().contains(model));
     }
-
 }

@@ -1,7 +1,5 @@
 {
-  "testData": {
-    "email": "letmeshadowfiend@gmail.com",
-    "password": "Oleg5969396!",
-    "username": "Олег"
+  "testEnv": {
+    "deviceName": "emulator-5554"
   }
 }

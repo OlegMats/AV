@@ -16,6 +16,6 @@ public class LoginPage {
         AppiumDriver.FindElement(mailOrLoginField).sendKeys(email);
         AppiumDriver.FindElement(passwordField).sendKeys(password);
         AppiumDriver.FindElement(loginButton).click();
-        FW.Log().Step("Login via email is successfully executed");
+//        FW.Log().Step("Login via email is successfully executed");
     }
 }

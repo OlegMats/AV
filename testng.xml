@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <listeners>
-        <listener class-name="framework.listeners.CustomListener"/>
-    </listeners>
-    <test verbose="2" name="D:/JavaRepo/AV/src/test/java/tests/Tests.java">
+    <test verbose="2" name="HomeTests">
         <classes>
             <class name="tests.Tests"/>
         </classes>
